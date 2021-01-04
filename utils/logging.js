@@ -1,6 +1,6 @@
 const _ = require('lodash');
 const log4js = require('log4js');
-// const config = require('../config');
+const config = require('../config');
 const {version} = require('../package');
 const clsHooked = require('cls-hooked');
 const LOG_LEVEL = config.log4js.level;

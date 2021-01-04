@@ -1,9 +1,9 @@
 {
   "name": "logging_poc",
   "version": "1.0.0",
-  "description": "",
   "main": "tester.js",
   "dependencies": {
+    "backend-kit": "^0.1.82",
     "log4js": "^6.3.0"
   },
   "devDependencies": {},
@@ -15,5 +15,6 @@
     "url": "ssh://git@stash.ironsrc.com:2222/~liran.ayda/logging_poc.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
