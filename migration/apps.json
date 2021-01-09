@@ -1,0 +1,11 @@
+[
+    {
+        "id": "491ff8ea-77b0-610f-f6ed-2a6121a75a58",
+        "name": "Facebook",
+        "category": "Social Networking",
+        "rating": 2.14,
+        "minAge": 15,
+        "maxAge": 80,
+        "gender": "male"
+    }
+]

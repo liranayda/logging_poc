@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "tester.js",
   "dependencies": {
-    "backend-kit": "^0.1.82",
+    "config": "^3.3.3",
+    "express": "^4.17.1",
     "log4js": "^6.3.0"
   },
   "devDependencies": {},
