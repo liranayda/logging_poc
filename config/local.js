@@ -1,57 +1,23 @@
 module.exports = {
-    whitelabel: "ironsource",
-    environment: "anqa",
-    etl: {
-        version: "20180722",
-    },
     webserver: {
-        port: 3002,
-        trustProxy: true,
+        port: 3001
     },
     redis: {
         host: "localhost",
         port: 6380,
     },
-    pubsub: {
-        redis: {
-            host: "localhost",
-            port: 6380,
-        },
-    },
-    memcache: {
-        enabled: false,
-    },
     log4js: {
-        level: "DEBUG",
-        jsonLayout: "json",
-        activateTimers: false,
-    },
-    reporting: {
-        request: {
-            enabled: false,
+        appenders: {
+            console: {type: "console"},
+            file: {type: "file", filename: "flow.log"},
         },
-        event: {
-            enabled: false,
-        },
-    },
-    cacheExpiration: {
-        refData: 900,
-    },
-    caching: {
-        enabled: true,
+        categories: {
+            default: {
+                appenders: ["console", "file"], level: 'trace'
+            }
+        }
     },
     metrics: {
         enabled: true,
-    },
-    geoip: {
-        path: "GeoIP2-City.mmdb",
-    },
-    trackingParamsEnrichment: {
-        includeAffiliateSubID: false,
-    },
-    apm: {
-        options: {
-            active: false,
-        },
-    },
+    }
 };
